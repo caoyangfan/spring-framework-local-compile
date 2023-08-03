@@ -290,8 +290,103 @@ configure(allprojects) { project ->
 			cacheChangingModulesFor 0, "seconds"
 		}
 		repositories {
+
+			mavenLocal()
+			maven { url 'https://maven.aliyun.com/repository/public/' }
+			maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+			maven { url 'https://maven.aliyun.com/repository/google/' }
+			maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+			maven { url 'https://jitpack.io/' }
 			mavenCentral()
 			maven { url "https://repo.spring.io/libs-spring-framework-build" }
+
+
+//			————————————————
+//			版权声明：本文为CSDN博主「浩彤先生」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+//			原文链接：https://blog.csdn.net/qq_32705919/article/details/124236568
+
+//			mavenCentral()
+//			maven { url "https://repo.spring.io/libs-spring-framework-build" }
+
+//			mavenLocal()
+//			maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+//			maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+//			maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+//			maven { url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+//			maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+//			maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+//			maven { url 'https://maven.aliyun.com/repository/public/' }
+//			maven { url 'https://maven.aliyun.com/repository/google/' }
+//			maven { url 'https://maven.aliyun.com/repository/central/' }
+//			maven { url 'https://clojars.org/repo/' }
+//			maven { url 'https://jitpack.io/' }
+//
+//			google()
+//			maven { url 'https://dl.bintray.com/guardian/android' }
+//			jcenter()
+//			maven { url "https://repo.springsource.org/plugins-release" }
+//			mavenCentral()
+//			gradlePluginPortal()
+
+
+
+
+//    ————————————————
+//    版权声明：本文为CSDN博主「浩彤先生」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+//    原文链接：https://blog.csdn.net/qq_32705919/article/details/124236568
+
+
+//			mavenLocal()
+////			maven { url 'https://maven.aliyun.com/repository/public/' }
+////			maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+////			maven { url 'https://maven.aliyun.com/repository/google/' }
+//			maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+//			maven { url 'https://jitpack.io/' }
+////			mavenCentral()
+////			gradlePluginPortal()
+//			//————————————————
+//			//版权声明：本文为CSDN博主「浩彤先生」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+//			//原文链接：https://blog.csdn.net/qq_32705919/article/details/124236568
+//
+//			maven { url'https://maven.aliyun.com/repository/gradle-plugin/' }
+//
+//			maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+//			maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+//			maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
+//            //
+//			maven { url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+//			maven { url'https://maven.aliyun.com/repository/public/' }
+//			maven { url'https://maven.aliyun.com/repository/google/' }
+//			maven { url'https://maven.aliyun.com/repository/jcenter/' }
+//			maven { url'https://maven.aliyun.com/repository/central/' }
+//			//————————————————
+//			//版权声明：本文为CSDN博主「X_kine」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+//			//原文链接：https://blog.csdn.net/X_kine/article/details/104741771
+//
+//			google()
+//			maven { url'https://jitpack.io' }
+//			maven { url'https://clojars.org/repo/' }
+//			maven { url'https://dl.bintray.com/guardian/android' }
+//			maven { url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+//			maven { url'https://maven.aliyun.com/repository/public/' }
+//			maven { url'https://maven.aliyun.com/repository/google/' }
+//			maven { url'https://maven.aliyun.com/repository/jcenter/' }
+//			maven { url'https://maven.aliyun.com/repository/central/' }
+//			jcenter()
+//			// ————————————————
+//			// 版权声明：本文为CSDN博主「不想写代码i」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+//			// 原文链接：https://blog.csdn.net/weixin_43842198/article/details/105637543
+//
+//			// 安卓开发：解决Caused by: org.gradle.api.internal.artifacts.ivyservice.DefaultLenientConfiguration等问题_android_CaiNiao_hu-华为云开发者联盟  https://huaweicloud.csdn.net/63a570eeb878a545459474f5.html?spm=1001.2101.3001.6650.7&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Eactivity-7-120263811-blog-104741771.235%5Ev38%5Epc_relevant_sort_base1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Eactivity-7-120263811-blog-104741771.235%5Ev38%5Epc_relevant_sort_base1&utm_relevant_index=13
+//
+//			maven { url "https://maven.aliyun.com/nexus/content/groups/public" }
+//			maven { url "https://repo.springsource.org/plugins-release" }
+//
+//			maven { url 'https://jitpack.io/' }
+//			mavenCentral()
+//			gradlePluginPortal()
+//			// mavenCentral()
+//			// maven { url "https://repo.spring.io/libs-spring-framework-build" }
 		}
 	}
 	configurations.all {
