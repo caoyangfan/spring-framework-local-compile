@@ -49,3 +49,5 @@ atlassian-ide-plugin.xml
 .vscode/
 
 cached-antora-playbook.yml
+/gradle/wrapper/***.zip
+/gradle/wrapper/gradle-7.5.1-bin.zip

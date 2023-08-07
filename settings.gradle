@@ -1,8 +1,23 @@
 pluginManagement {
 	repositories {
+		mavenLocal()
+		maven { url 'https://maven.aliyun.com/repository/public/' }
+		maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+		maven { url 'https://maven.aliyun.com/repository/google/' }
+		maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+		maven { url 'https://jitpack.io/' }
 		mavenCentral()
 		gradlePluginPortal()
-		maven { url "https://repo.spring.io/release" }
+		maven { url 'https://repo.spring.io/plugins-release' }
+		maven { url 'https://repo.spring.io/release' }
+
+
+//			————————————————
+//			版权声明：本文为CSDN博主「浩彤先生」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+//			原文链接：https://blog.csdn.net/qq_32705919/article/details/124236568
+
+//		gradlePluginPortal()
+//		maven { url 'https://repo.spring.io/plugins-release' }
 	}
 }
 
@@ -55,3 +70,5 @@ settings.gradle.projectsLoaded {
 		}
 	}
 }
+include 'spring-learning-v5.3.29'
+

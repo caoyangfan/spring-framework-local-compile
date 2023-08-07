@@ -56,7 +56,8 @@ configure(allprojects) { project ->
 				entry 'aspectjtools'
 				entry 'aspectjweaver'
 			}
-			dependencySet(group: 'org.codehaus.groovy', version: '3.0.9') {
+			// dependencySet(group: 'org.codehaus.groovy', version: '3.0.9') {
+			dependencySet(group: 'org.codehaus.groovy', version: '3.0.10') {
 				entry 'groovy'
 				entry 'groovy-jsr223'
 				entry 'groovy-templates'  // requires findbugs for warning-free compilation
@@ -290,8 +291,23 @@ configure(allprojects) { project ->
 			cacheChangingModulesFor 0, "seconds"
 		}
 		repositories {
+			mavenLocal()
+			maven { url 'https://maven.aliyun.com/repository/public/' }
+			maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+			maven { url 'https://maven.aliyun.com/repository/google/' }
+			maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+			maven { url 'https://jitpack.io/' }
 			mavenCentral()
 			maven { url "https://repo.spring.io/libs-spring-framework-build" }
+
+			maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+
+//			————————————————
+//			版权声明：本文为CSDN博主「浩彤先生」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+//			原文链接：https://blog.csdn.net/qq_32705919/article/details/124236568
+
+//			mavenCentral()
+//			maven { url "https://repo.spring.io/libs-spring-framework-build" }
 		}
 	}
 	configurations.all {
@@ -343,6 +359,14 @@ configure([rootProject] + javaProjects) { project ->
 		toolVersion = "10.12.1"
 		configDirectory.set(rootProject.file("src/checkstyle"))
 	}
+//	checkstyle {
+//		toolVersion = "10.12.1"
+//		configDirectory.set(rootProject.file("etc/checkstyle"))
+//	}
+//	checkstyle {
+//		toolVersion = "10.12.1"
+//		configDir = file("$rootProject.projectDir/etc/checkstyle")
+//	}
 
 	dependencies {
 		testImplementation("org.junit.jupiter:junit-jupiter-api")

@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.3.29'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api(project(":spring-beans"))
+    api(project(":spring-core"))
+    api(project(":spring-aop"))
+    api(project(":spring-context"))
+    api(project(":spring-expression"))
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
