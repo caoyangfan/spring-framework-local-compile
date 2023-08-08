@@ -16,4 +16,15 @@ public class TestConfiguration {
 		user.setHeight(182);
 		return user;
 	}
+
+	@Bean
+	public Person person() {
+		Person person = new Person();
+		person.setName("Person v6.1.0-M2 用户名中文乱码测试");
+		person.setAge(22);
+		person.setSex("男");
+		person.setMobile("15245654854");
+		return person;
+	}
+
 }

@@ -8,5 +8,7 @@ public class TestMain {
 		ApplicationContext context = new AnnotationConfigApplicationContext(TestConfiguration.class);
 		User user = context.getBean("user", User.class);
 		System.out.println(user);
+		Person person = context.getBean("person", Person.class);
+		System.out.println(person);
 	}
 }
