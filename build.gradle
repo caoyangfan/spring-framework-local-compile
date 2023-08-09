@@ -18,6 +18,18 @@ ext {
 
 configure(allprojects) { project ->
 	repositories {
+		mavenLocal()
+		maven { url 'https://maven.aliyun.com/repository/public/' }
+		maven { url 'https://maven.aliyun.com/repository/jcenter/' }
+		maven { url 'https://maven.aliyun.com/repository/google/' }
+		maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+		maven { url 'https://jitpack.io/' }
+		mavenCentral()
+		maven { url "https://repo.spring.io/libs-spring-framework-build" }
+
+		maven{ url 'https://maven.aliyun.com/nexus/content/groups/public/'}
+
+
 		mavenCentral()
 		maven {
 			url "https://repo.spring.io/milestone"
